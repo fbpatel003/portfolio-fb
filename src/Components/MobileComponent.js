@@ -1,12 +1,14 @@
-import React from 'react'
-import GooeyMenu from './GooeyMenu';
+import React from "react";
+import GooeyMenu from "./GooeyMenu";
 
 function MobileComponent() {
-    return ( 
-        <>
-        <GooeyMenu/>
-        </>
-     );
+  return (
+    <>
+      <div className="mainGooeyMenu">
+        <GooeyMenu />
+      </div>
+    </>
+  );
 }
 
 export default MobileComponent;
