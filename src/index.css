@@ -41,7 +41,7 @@ h1, h2, h3, h4 {
   text-align: center;
   line-height: 80px;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform ease-out 200ms;
   transition: -webkit-transform ease-out 200ms;
   transition: transform ease-out 200ms;
@@ -197,3 +197,23 @@ h1, h2, h3, h4 {
 .GooeyIcon{
   margin-top: 20px;
 }
+
+body {
+	background: linear-gradient(-45deg, #501300, #640026, #00455e, #005a45);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
