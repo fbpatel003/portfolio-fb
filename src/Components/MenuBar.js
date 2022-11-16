@@ -9,8 +9,6 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import IntegrationInstructionsTwoToneIcon from '@mui/icons-material/IntegrationInstructionsTwoTone';
-
-// import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -19,9 +17,7 @@ const theme = createTheme({
       'Lobster',
       'serif',
     ].join(','),
-    fontSize: [
-      '22px'
-    ].join(','),
+    fontSize:15,
   },});
 
 
@@ -30,7 +26,7 @@ const pages = ['Home', 'About me', 'Skills', 'Portfolio', 'Contact me'];
 function MenuBar() {
 
   return (
-    <AppBar position="static">
+    <AppBar sx={{ background: "linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)" }} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <IntegrationInstructionsTwoToneIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -38,7 +34,6 @@ function MenuBar() {
             variant="h6"
             noWrap
             component="a"
-            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -53,7 +48,7 @@ function MenuBar() {
           </Typography> 
 
           <ThemeProvider theme={theme}>
-          <Box className='MenuNavButtons' sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box className='MenuNavButtons' sx={{ flexGrow: 1 , display: 'flex', justifyContent: 'flex-end', }}>
             {pages.map((page) => (
               <Button
                 key={page}
