@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MobileComponent from "./Components/MobileComponent";
+import DesktopComponent from "./Components/DesktopComponent";
 
-function App() {
+const viewportContext = React.createContext({});  
+
+const ViewportProvider = ({ children }) => {
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const [height, setHeight] = React.useState(window.innerHeight);
+  const handleWindowResize = () => {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+  }; 
+
+  React.useEffect(() => {
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <viewportContext.Provider value={{ width, height }}>
+      {children}
+    </viewportContext.Provider>
+  );
+};
+
+const useViewport = () => {
+  const { width, height } = React.useContext(viewportContext);
+  return { width, height };
+};
+
+const MyComponent = () => {
+  const { width } = useViewport();
+  const breakpoint = 900;
+
+  return width < breakpoint ? <MobileComponent /> : <DesktopComponent />;
+};
+
+export default function App() {
+  return (
+    <ViewportProvider>
+      <MyComponent />
+    </ViewportProvider>
   );
 }
-
-export default App;
