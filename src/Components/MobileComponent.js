@@ -22,32 +22,32 @@ function GooeyMenu() {
           <span className="hamburger hamburger-2" />
           <span className="hamburger hamburger-3" />
         </label>
-        <a href="#" className="menu-item">
+        <label htmlFor="menu-open" href="#" className="menu-item">
           {" "}
           <ContactsRoundedIcon className="GooeyIcon" fontSize="large" />{" "}
-        </a>
-        <a href="#" className="menu-item">
+        </label>
+        <label htmlFor="menu-open" href="#" className="menu-item">
           {" "}
           <BusinessCenterRoundedIcon
             className="GooeyIcon"
             fontSize="large"
           />{" "}
-        </a>
-        <a href="#" className="menu-item">
+        </label>
+        <label htmlFor="menu-open" href="#" className="menu-item">
           {" "}
           <TipsAndUpdatesRoundedIcon
             className="GooeyIcon"
             fontSize="large"
           />{" "}
-        </a>
-        <a href="#" className="menu-item">
+        </label>
+        <label htmlFor="menu-open" href="#" className="menu-item">
           {" "}
           <PersonRoundedIcon className="GooeyIcon" fontSize="large" />{" "}
-        </a>
-        <a href="#" className="menu-item">
+        </label>
+        <label htmlFor="menu-open" href="#" className="menu-item">
           {" "}
           <HomeRoundedIcon className="GooeyIcon" fontSize="large" />{" "}
-        </a>
+        </label>
       </nav>
       {/* filters */}
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -102,7 +102,7 @@ function MobileComponent() {
         <GooeyMenu />
         <div>
           <div className="title">
-            <h1>The Mind of a Web Developer</h1>
+            <h1 className="titleee" >The Mind of a Web Developer</h1>
           </div>
           <div className="DevDeskContainer">
             <div className="developer">
