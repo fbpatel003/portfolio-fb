@@ -201,23 +201,43 @@ h1, h2, h3, h4 {
 
 
 .DevBack {
-  background-color: #6a5fff; 
+  background: linear-gradient(to right, #0cbaba 50%, #380036, darksalmon);
+  animation: gradient 15s ease infinite;
+	background-size: 400% 400%;
   height: 100vh;
   width: 100vw;
   align-items: center;
   justify-content: center;
   margin: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .title{
   /* position: absolute; */
   text-shadow: 0 0 4px #000;
   text-align: center;
-  color: rgb(255, 166, 0);
-  top: 6%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, serif;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  margin: auto;
+  top: 170px;
+  font-family: Satisfy, serif;
+}
+
+.titleee{
+  text-align: center;
+  align-items: center;
 }
 
 .DevDeskContainer{
@@ -232,6 +252,7 @@ h1, h2, h3, h4 {
   position: relative;
   top: 260px;
   width: 100vw;
+  max-width: 800px;
 }
 
 .worker {
@@ -241,7 +262,7 @@ h1, h2, h3, h4 {
 }
 
 .snowflakes, .snowflake {
-  color: #ff9100;
+  color: #ffffff;
   font-size: 0.86em;
   font-family: Arial, sans-serif;
   text-shadow: 0 0 4px rgb(0, 0, 0);
