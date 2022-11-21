@@ -16,8 +16,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 ///////
 function DesktopComponent() {
-    const ref = useRef(null);
-
+    const HomeRef = useRef(null);
+    const AboutMeRef = useRef(null);
     
 const theme = createTheme({
     typography: {
@@ -61,7 +61,7 @@ const theme = createTheme({
               {pages.map((page) => (
                 <Button
                   key={page}
-                  onClick= {()=>ref.current?.scrollIntoView({behavior: 'smooth'})}
+                  onClick= {()=>HomeRef.current?.scrollIntoView({behavior: 'smooth'})}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 > 
                   {page}
@@ -283,12 +283,13 @@ const theme = createTheme({
           </div>
         </div>
         </section>
-        <div ref={ref} id='About-me' className="About-me-sec">
+        <div ref={HomeRef} id='About-me' className="About-me-sec">
 
         </div>
-        <div ref={ref} id='About-me' className="About-me-sec">
+        <div ref={AboutMeRef} id='About-me' className="About-me-sec">
 
 </div>
+
         </>
      );
 }
