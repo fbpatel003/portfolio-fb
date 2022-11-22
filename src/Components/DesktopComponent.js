@@ -1,79 +1,128 @@
-import {useRef} from 'react';
+import { useRef } from "react";
 ///////
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import IntegrationInstructionsTwoToneIcon from '@mui/icons-material/IntegrationInstructionsTwoTone';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
+import IntegrationInstructionsTwoToneIcon from "@mui/icons-material/IntegrationInstructionsTwoTone";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 ///////
 function DesktopComponent() {
-    const HomeRef = useRef(null);
-    const AboutMeRef = useRef(null);
-    
-const theme = createTheme({
+  const HomeRef = useRef(null);
+  const AboutMeRef = useRef(null);
+  const SkillsRef = useRef(null);
+  const PortfolioRef = useRef(null);
+  const ContactmeRef = useRef(null);
+
+  const theme = createTheme({
     typography: {
-      fontFamily: [
-        'Lobster',
-        'serif',
-      ].join(','),
-      fontSize:15,
-    },});
-  
-  
-  const pages = ['Home', 'About me', 'Skills', 'Portfolio', 'Contact me'];
-  
-  
+      fontFamily: ["Lobster", "serif"].join(","),
+      fontSize: 15,
+    },
+  });
+
   function MenuBar() {
-  
     return (
-      <AppBar sx={{ background: "linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)" }} position="static">
+      <AppBar
+        sx={{
+          background:
+            "linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)",
+        }}
+        position="sticky"
+      >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <IntegrationInstructionsTwoToneIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+            <IntegrationInstructionsTwoToneIcon
+              sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+            />
             <Typography
               variant="h6"
               noWrap
               component="a"
               sx={{
                 mr: 2,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
+                display: { xs: "none", md: "flex" },
+                fontFamily: "monospace",
                 fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
               }}
             >
               Coding is Love..!!
-            </Typography> 
-  
+            </Typography>
+
             <ThemeProvider theme={theme}>
-            <Box className='MenuNavButtons' sx={{ flexGrow: 1 , display: 'flex', justifyContent: 'flex-end', }}>
-              {pages.map((page) => (
+              <Box
+                className="MenuNavButtons"
+                sx={{
+                  flexGrow: 1,
+                  display: "flex",
+                  justifyContent: "flex-end",
+                }}
+              >
                 <Button
-                  key={page}
-                  onClick= {()=>HomeRef.current?.scrollIntoView({behavior: 'smooth'})}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
-                > 
-                  {page}
+                  onClick={() =>
+                    HomeRef.current?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  {" "}
+                  Home{" "}
                 </Button>
-              ))}
-            </Box>
+                <Button
+                  onClick={() =>
+                    AboutMeRef.current?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  {" "}
+                  About me{" "}
+                </Button>
+                <Button
+                  onClick={() =>
+                    SkillsRef.current?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  {" "}
+                  Skills{" "}
+                </Button>
+                <Button
+                  onClick={() =>
+                    PortfolioRef.current?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  {" "}
+                  Portfolio{" "}
+                </Button>
+                <Button
+                  onClick={() =>
+                    ContactmeRef.current?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  {" "}
+                  Contact me{" "}
+                </Button>
+              </Box>
             </ThemeProvider>
-  
+
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Fenil Babariya">
                 <IconButton sx={{ p: 0 }}>
-                  <Avatar alt="Remy Sharp" src={require('../Images/logoImage.jpg')} />
+                  <Avatar
+                    alt="Remy Sharp"
+                    src={require("../Images/logoImage.jpg")}
+                  />
                 </IconButton>
               </Tooltip>
             </Box>
@@ -81,12 +130,12 @@ const theme = createTheme({
         </Container>
       </AppBar>
     );
-  };
+  }
 
-    return ( 
-        <>
-        <section id='Home' className='DevBack'>
-        <MenuBar/>
+  return (
+    <>
+      <MenuBar />
+      <section ref={HomeRef} className="DevBack">
         <div>
           <div className="title">
             <h1 className="titleee">The Mind of a Web Developer</h1>
@@ -282,16 +331,23 @@ const theme = createTheme({
             <div className="snowflake">&lt;script&gt;</div>
           </div>
         </div>
-        </section>
-        <div ref={HomeRef} id='About-me' className="About-me-sec">
-
-        </div>
-        <div ref={AboutMeRef} id='About-me' className="About-me-sec">
-
-</div>
-
-        </>
-     );
+      </section>
+      <section
+        ref={AboutMeRef}
+        id="About-me"
+        className="About-me-sec"
+      >About me</section>
+      <section ref={SkillsRef} className="Skills-sec">
+      Skills
+      </section>
+      <section ref={PortfolioRef} className="Portfolio-sec">
+      Portfolio
+      </section>
+      <section ref={ContactmeRef} className="Contactme-sec">
+      Contact me
+      </section>
+    </>
+  );
 }
 
 export default DesktopComponent;

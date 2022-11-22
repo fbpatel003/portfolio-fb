@@ -1,4 +1,5 @@
 import React from "react";
+import { useRef } from "react";
 
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
@@ -6,100 +7,128 @@ import TipsAndUpdatesRoundedIcon from "@mui/icons-material/TipsAndUpdatesRounded
 import BusinessCenterRoundedIcon from "@mui/icons-material/BusinessCenterRounded";
 import ContactsRoundedIcon from "@mui/icons-material/ContactsRounded";
 
-function GooeyMenu() {
-  return (
-    <div>
-      <nav className="menu">
-        <input
-          type="checkbox"
-          href="#"
-          className="menu-open"
-          name="menu-open"
-          id="menu-open"
-        />
-        <label className="menu-open-button" htmlFor="menu-open">
-          <span className="hamburger hamburger-1" />
-          <span className="hamburger hamburger-2" />
-          <span className="hamburger hamburger-3" />
-        </label>
-        <label htmlFor="menu-open" href="#" className="menu-item">
-          {" "}
-          <ContactsRoundedIcon className="GooeyIcon" fontSize="large" />{" "}
-        </label>
-        <label htmlFor="menu-open" href="#" className="menu-item">
-          {" "}
-          <BusinessCenterRoundedIcon
-            className="GooeyIcon"
-            fontSize="large"
-          />{" "}
-        </label>
-        <label htmlFor="menu-open" href="#" className="menu-item">
-          {" "}
-          <TipsAndUpdatesRoundedIcon
-            className="GooeyIcon"
-            fontSize="large"
-          />{" "}
-        </label>
-        <label htmlFor="menu-open" href="#" className="menu-item">
-          {" "}
-          <PersonRoundedIcon className="GooeyIcon" fontSize="large" />{" "}
-        </label>
-        <label htmlFor="menu-open" href="#" className="menu-item">
-          {" "}
-          <HomeRoundedIcon className="GooeyIcon" fontSize="large" />{" "}
-        </label>
-      </nav>
-      {/* filters */}
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-          <filter id="shadowed-goo">
-            <feGaussianBlur
-              in="SourceGraphic"
-              result="blur"
-              stdDeviation={10}
-            />
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-              result="goo"
-            />
-            <feGaussianBlur in="goo" stdDeviation={3} result="shadow" />
-            <feColorMatrix
-              in="shadow"
-              mode="matrix"
-              values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
-              result="shadow"
-            />
-            <feOffset in="shadow" dx={1} dy={1} result="shadow" />
-            <feBlend in2="shadow" in="goo" result="goo" />
-            <feBlend in2="goo" in="SourceGraphic" result="mix" />
-          </filter>
-          <filter id="goo">
-            <feGaussianBlur
-              in="SourceGraphic"
-              result="blur"
-              stdDeviation={10}
-            />
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-              result="goo"
-            />
-            <feBlend in2="goo" in="SourceGraphic" result="mix" />
-          </filter>
-        </defs>
-      </svg>
-    </div>
-  );
-}
 
 function MobileComponent() {
+
+  const HomeRef = useRef(null);
+  const AboutMeRef = useRef(null);
+  const SkillsRef = useRef(null);
+  const PortfolioRef = useRef(null);
+  const ContactmeRef = useRef(null);
+
+  function GooeyMenu() {
+    return (
+      <div>
+        <nav className="menu">
+          <input
+            type="checkbox"
+            href="#"
+            className="menu-open"
+            name="menu-open"
+            id="menu-open"
+          />
+          <label className="menu-open-button" htmlFor="menu-open">
+            <span className="hamburger hamburger-1" />
+            <span className="hamburger hamburger-2" />
+            <span className="hamburger hamburger-3" />
+          </label>
+          <label 
+           onClick={() =>
+            ContactmeRef.current?.scrollIntoView({ behavior: "smooth" })
+          }
+           htmlFor="menu-open" className="menu-item">
+            {" "}
+            <ContactsRoundedIcon className="GooeyIcon" fontSize="large" />{" "}
+          </label>
+          <label 
+          onClick={() =>
+            PortfolioRef.current?.scrollIntoView({ behavior: "smooth" })
+          }
+          htmlFor="menu-open" href="#" className="menu-item">
+            {" "}
+            <BusinessCenterRoundedIcon
+              className="GooeyIcon"
+              fontSize="large"
+            />{" "}
+          </label>
+          <label
+          onClick={() =>
+            SkillsRef.current?.scrollIntoView({ behavior: "smooth" })
+          }
+          htmlFor="menu-open" href="#" className="menu-item">
+            {" "}
+            <TipsAndUpdatesRoundedIcon
+              className="GooeyIcon"
+              fontSize="large"
+            />{" "}
+          </label>
+          <label
+          onClick={() =>
+            AboutMeRef.current?.scrollIntoView({ behavior: "smooth" })
+          }
+          htmlFor="menu-open" href="#" className="menu-item">
+            {" "}
+            <PersonRoundedIcon className="GooeyIcon" fontSize="large" />{" "}
+          </label>
+          <label
+          onClick={() =>
+            HomeRef.current?.scrollIntoView({ behavior: "smooth" })
+          }
+          htmlFor="menu-open" href="#" className="menu-item">
+            {" "}
+            <HomeRoundedIcon className="GooeyIcon" fontSize="large" />{" "}
+          </label>
+        </nav>
+        {/* filters */}
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <filter id="shadowed-goo">
+              <feGaussianBlur
+                in="SourceGraphic"
+                result="blur"
+                stdDeviation={10}
+              />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                result="goo"
+              />
+              <feGaussianBlur in="goo" stdDeviation={3} result="shadow" />
+              <feColorMatrix
+                in="shadow"
+                mode="matrix"
+                values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
+                result="shadow"
+              />
+              <feOffset in="shadow" dx={1} dy={1} result="shadow" />
+              <feBlend in2="shadow" in="goo" result="goo" />
+              <feBlend in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
+            <filter id="goo">
+              <feGaussianBlur
+                in="SourceGraphic"
+                result="blur"
+                stdDeviation={10}
+              />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                result="goo"
+              />
+              <feBlend in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    );
+  }
+
   return (
     <>
-      <div className="DevBack">
-        <GooeyMenu />
+      <GooeyMenu />
+      <div className="DevBack" ref={HomeRef}>
         <div>
           <div className="title">
             <h1 className="titleee" >The Mind of a Web Developer</h1>
@@ -296,6 +325,19 @@ function MobileComponent() {
           </div>
         </div>
       </div>
+      <section
+        ref={AboutMeRef}
+        className="About-me-sec"
+      >About me</section>
+      <section ref={SkillsRef} className="Skills-sec">
+      Skills
+      </section>
+      <section ref={PortfolioRef} className="Portfolio-sec">
+      Portfolio
+      </section>
+      <section ref={ContactmeRef} className="Contactme-sec">
+      Contact me
+      </section>
     </>
   );
 }
