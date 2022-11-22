@@ -18,7 +18,7 @@ a {
   color: inherit;
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
   margin: 0;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -200,11 +200,10 @@ h1, h2, h3, h4 {
 
 .GooeyGooey{
   position: fixed;
-  align-items: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 20px;
-  margin-left: 10vw;
+  z-index: 99;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 .DevBack {
@@ -231,14 +230,15 @@ h1, h2, h3, h4 {
 }
 
 .title{
-  /* position: absolute; */
   text-shadow: 0 0 4px #000;
-  text-align: center;
-  align-items: center;
   color: rgb(255, 255, 255);
-  margin: auto;
-  top: 170px;
+  top: 150px;
   font-family: "Satisfy", serif;
+  position: absolute;
+  z-index: 99;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 .titleee{
