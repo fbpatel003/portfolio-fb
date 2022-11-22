@@ -198,6 +198,15 @@ h1, h2, h3, h4 {
   margin-top: 20px;
 }
 
+.GooeyGooey{
+  position: fixed;
+  align-items: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-left: 10vw;
+}
+
 .DevBack {
   background: linear-gradient(to right, #0cbaba 50%, #6b0068, darksalmon);
   animation: gradient 15s ease infinite;
