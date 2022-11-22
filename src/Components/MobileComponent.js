@@ -18,7 +18,7 @@ function MobileComponent() {
 
   function GooeyMenu() {
     return (
-      <div>
+      <div className="GooeyGooey">
         <nav className="menu">
           <input
             type="checkbox"
