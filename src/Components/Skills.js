@@ -123,7 +123,7 @@ function Skills() {
             </div>
           </Grid>
           <Grid className="SkillName" xs={4}>
-            Material UI
+            MUI
           </Grid>
           <Grid className="SkillProgress" xs={8}>
             <div className="progress">

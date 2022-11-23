@@ -8,6 +8,7 @@ import BusinessCenterRoundedIcon from "@mui/icons-material/BusinessCenterRounded
 import ContactsRoundedIcon from "@mui/icons-material/ContactsRounded";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
+import Portfolio from "./Portfolio";
 
 function MobileComponent() {
   const HomeRef = useRef(null);
@@ -363,7 +364,7 @@ function MobileComponent() {
         <Skills/>
       </section>
       <section ref={PortfolioRef} className="Portfolio-sec">
-        Portfolio
+        <Portfolio/>
       </section>
       <section ref={ContactmeRef} className="Contactme-sec">
         Contact me

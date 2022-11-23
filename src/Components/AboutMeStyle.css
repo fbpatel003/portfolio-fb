@@ -21,21 +21,16 @@
 }
 
 .who {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Raleway', serif;
   font-size: xx-large;
   text-align: left;
   margin-bottom: 15px;
   padding-left: 10px;
 }
 
-@font-face {
-  font-family: neon;
-  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
-}
-
 .flux {
   margin-top: 20px;
-  font-family: neon;
+  font-family: MuseoModerno, serif;
   color: #d9ff00;
   font-size: 35px;
   line-height: 3vw;

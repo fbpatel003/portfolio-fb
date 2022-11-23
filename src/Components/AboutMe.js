@@ -15,7 +15,7 @@ function AboutMe(props) {
           </Grid>
           <Grid className="MyInfo" xs={12} md={6}>
             <div className="who">Who is this guy..?!</div>
-            <div class="flux">Fenil Patel </div>
+            <div className="flux">Fenil Patel </div>
             <div className="my-Info">
               An Engineer graduated with Electricals' Degree, More than three
               years of experience in the industry, Involved in Team management
