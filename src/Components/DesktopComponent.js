@@ -331,20 +331,32 @@ function DesktopComponent() {
             <div className="snowflake">&lt;script&gt;</div>
           </div>
         </div>
+        <div className="BtnStarted">
+        <div className="getStartedBtn" onClick={() =>
+                    AboutMeRef.current?.scrollIntoView({ behavior: "smooth" })
+                  }>
+          <div className="getStartedBtn__text">Let's get Started...</div>
+          <div className="getStartedBtn__wrapper">
+            <div className="getStartedBtn__arrow" />
+            <div className="getStartedBtn__border-circle" />
+            <div className="getStartedBtn__mask-circle">
+              <div className="getStartedBtn__small-circle" />
+            </div>
+          </div>
+        </div>
+        </div>
       </section>
-      <section
-        ref={AboutMeRef}
-        id="About-me"
-        className="About-me-sec"
-      >About me</section>
+      <section ref={AboutMeRef} id="About-me" className="About-me-sec">
+        About me
+      </section>
       <section ref={SkillsRef} className="Skills-sec">
-      Skills
+        Skills
       </section>
       <section ref={PortfolioRef} className="Portfolio-sec">
-      Portfolio
+        Portfolio
       </section>
       <section ref={ContactmeRef} className="Contactme-sec">
-      Contact me
+        Contact me
       </section>
     </>
   );

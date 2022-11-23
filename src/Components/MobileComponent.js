@@ -7,9 +7,7 @@ import TipsAndUpdatesRoundedIcon from "@mui/icons-material/TipsAndUpdatesRounded
 import BusinessCenterRoundedIcon from "@mui/icons-material/BusinessCenterRounded";
 import ContactsRoundedIcon from "@mui/icons-material/ContactsRounded";
 
-
 function MobileComponent() {
-
   const HomeRef = useRef(null);
   const AboutMeRef = useRef(null);
   const SkillsRef = useRef(null);
@@ -32,19 +30,24 @@ function MobileComponent() {
             <span className="hamburger hamburger-2" />
             <span className="hamburger hamburger-3" />
           </label>
-          <label 
-           onClick={() =>
-            ContactmeRef.current?.scrollIntoView({ behavior: "smooth" })
-          }
-           htmlFor="menu-open" className="menu-item">
+          <label
+            onClick={() =>
+              ContactmeRef.current?.scrollIntoView({ behavior: "smooth" })
+            }
+            htmlFor="menu-open"
+            className="menu-item"
+          >
             {" "}
             <ContactsRoundedIcon className="GooeyIcon" fontSize="large" />{" "}
           </label>
-          <label 
-          onClick={() =>
-            PortfolioRef.current?.scrollIntoView({ behavior: "smooth" })
-          }
-          htmlFor="menu-open" href="#" className="menu-item">
+          <label
+            onClick={() =>
+              PortfolioRef.current?.scrollIntoView({ behavior: "smooth" })
+            }
+            htmlFor="menu-open"
+            href="#"
+            className="menu-item"
+          >
             {" "}
             <BusinessCenterRoundedIcon
               className="GooeyIcon"
@@ -52,10 +55,13 @@ function MobileComponent() {
             />{" "}
           </label>
           <label
-          onClick={() =>
-            SkillsRef.current?.scrollIntoView({ behavior: "smooth" })
-          }
-          htmlFor="menu-open" href="#" className="menu-item">
+            onClick={() =>
+              SkillsRef.current?.scrollIntoView({ behavior: "smooth" })
+            }
+            htmlFor="menu-open"
+            href="#"
+            className="menu-item"
+          >
             {" "}
             <TipsAndUpdatesRoundedIcon
               className="GooeyIcon"
@@ -63,18 +69,24 @@ function MobileComponent() {
             />{" "}
           </label>
           <label
-          onClick={() =>
-            AboutMeRef.current?.scrollIntoView({ behavior: "smooth" })
-          }
-          htmlFor="menu-open" href="#" className="menu-item">
+            onClick={() =>
+              AboutMeRef.current?.scrollIntoView({ behavior: "smooth" })
+            }
+            htmlFor="menu-open"
+            href="#"
+            className="menu-item"
+          >
             {" "}
             <PersonRoundedIcon className="GooeyIcon" fontSize="large" />{" "}
           </label>
           <label
-          onClick={() =>
-            HomeRef.current?.scrollIntoView({ behavior: "smooth" })
-          }
-          htmlFor="menu-open" href="#" className="menu-item">
+            onClick={() =>
+              HomeRef.current?.scrollIntoView({ behavior: "smooth" })
+            }
+            htmlFor="menu-open"
+            href="#"
+            className="menu-item"
+          >
             {" "}
             <HomeRoundedIcon className="GooeyIcon" fontSize="large" />{" "}
           </label>
@@ -128,10 +140,10 @@ function MobileComponent() {
   return (
     <>
       <GooeyMenu />
-      <div className="DevBack" ref={HomeRef}>
+      <section className="DevBack" ref={HomeRef}>
         <div>
           <div className="title">
-            <h1 className="titleee" >The Mind of a Web Developer</h1>
+            <h1 className="titleee">The Mind of a Web Developer</h1>
           </div>
           <div className="DevDeskContainer">
             <div className="developer">
@@ -324,19 +336,35 @@ function MobileComponent() {
             <div className="snowflake">&lt;script&gt;</div>
           </div>
         </div>
-      </div>
-      <section
-        ref={AboutMeRef}
-        className="About-me-sec"
-      >About me</section>
+        <div className="BtnStartedMobile">
+          <div
+            className="getStartedBtn"
+            onClick={() =>
+              AboutMeRef.current?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            <div className="getStartedBtn__text">Let's get Started...</div>
+            <div className="getStartedBtn__wrapper">
+              <div className="getStartedBtn__arrow" />
+              <div className="getStartedBtn__border-circle" />
+              <div className="getStartedBtn__mask-circle">
+                <div className="getStartedBtn__small-circle" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section ref={AboutMeRef} className="About-me-sec">
+        About me
+      </section>
       <section ref={SkillsRef} className="Skills-sec">
-      Skills
+        Skills
       </section>
       <section ref={PortfolioRef} className="Portfolio-sec">
-      Portfolio
+        Portfolio
       </section>
       <section ref={ContactmeRef} className="Contactme-sec">
-      Contact me
+        Contact me
       </section>
     </>
   );
