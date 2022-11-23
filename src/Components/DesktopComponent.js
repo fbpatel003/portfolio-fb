@@ -137,9 +137,6 @@ function DesktopComponent() {
       <MenuBar />
       <section ref={HomeRef} className="DevBack">
         <div>
-          <div className="title">
-            <h1 className="titleee">The Mind of a Web Developer</h1>
-          </div>
           <div className="DevDeskContainer">
             <div className="developer">
               <div className="worker">
@@ -305,6 +302,9 @@ function DesktopComponent() {
                 </svg>
               </div>
             </div>
+          </div>
+          <div className="title">
+            <h1 className="titleee">The Mind of a Web Developer</h1>
           </div>
           <div className="snowflakes" aria-hidden="true">
             <div className="snowflake">&lt;p&gt;</div>
