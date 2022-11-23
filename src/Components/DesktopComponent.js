@@ -352,7 +352,7 @@ function DesktopComponent() {
         <AboutMe/>
       </section>
       <section ref={SkillsRef} className="Skills-sec">
-        <Skills/>
+        <Skills />
       </section>
       <section ref={PortfolioRef} className="Portfolio-sec">
         Portfolio
