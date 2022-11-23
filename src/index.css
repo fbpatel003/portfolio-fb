@@ -13,6 +13,42 @@ code {
     monospace;
 }
 
+/* <style type="text/css"> */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 51px;
+  height: 51px;
+}
+::-webkit-scrollbar-thumb {
+  background: #9d00a8;
+  border: 0px none #fc0303;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #81008a;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #cfcfcf;
+}
+::-webkit-scrollbar-track:active {
+  background: #9d00a8;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+/* </style> */
+
 
 a {
   color: inherit;
@@ -211,7 +247,7 @@ h2, h3, h4 {
   animation: gradient 15s ease infinite;
 	background-size: 400% 400%;
   height: 100vh;
-  width: 98.5vw;
+  width: 99.5vw;
   align-items: center;
   justify-content: center;
   margin: 0;

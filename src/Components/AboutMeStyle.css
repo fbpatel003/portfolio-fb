@@ -1,14 +1,75 @@
-.responsiveBoxSpeciality{
-    margin: auto;
+.responsiveBoxSpeciality {
+  margin: auto;
 }
-.specialityBox{
-    border: 2px solid red;
-    height: 100px;
+.specialityBox {
+  /* border: 2px solid red; */
+  height: 140px;
 }
-.TitleAboutMe{
-    font-family: Lobster, serif;
-    font-size: larger;
-    font-size: 10vh;
-    text-decoration: underline;
-    color: aqua;
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+.TitleAboutMe {
+  font-size: calc(20px + 10vh);
+  line-height: calc(20px + 10vh);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+.specialityIcon {
+  color: rgb(89, 255, 158);
+}
+.SpecialityName {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
+  color: white;
 }
