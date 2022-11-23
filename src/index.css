@@ -328,6 +328,7 @@ h2, h3, h4 {
   margin-right: -18px;
   color: #FAFAFA;
   letter-spacing: 0.05em;
+  font-weight: bolder;
 }
 .getStartedBtn__wrapper {
   position: relative;
@@ -397,7 +398,7 @@ h2, h3, h4 {
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
 .TitleAboutMe {
-  font-size: calc(20px + 10vh);
+  font-size: calc(20px + 8vh);
   line-height: calc(20px + 10vh);
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
     0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
@@ -461,7 +462,7 @@ h2, h3, h4 {
  }
 
  .Skills-sec{
-  height: 100vh;
+  height: auto;
   width: 98vw;
   padding-top: 40px;
   text-align: center;

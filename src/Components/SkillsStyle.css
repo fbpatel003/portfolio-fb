@@ -1,27 +1,168 @@
 .responsiveBoxSpeciality {
-    margin: auto;
+  margin: auto;
 }
 .specialityBox {
-/* border: 2px solid red; */
-height: auto;
-min-height: 180px;
-align-items: center;
-text-align: center;
-padding: 10px;
-box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-
+  /* border: 2px solid red; */
+  height: auto;
+  min-height: 180px;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .specialityIcon {
-color: rgb(89, 255, 158);
+  color: rgb(89, 255, 158);
 }
 .SpecialityName {
-font-family: 'Courier New', Courier, monospace;
-font-size: large;
-color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  color: white;
 }
 
-.paragraphSpeciality{
-    font-family: monospace, serif;
-    color: #ffd07a;
-    font-size: small;
-}  
+.paragraphSpeciality {
+  font-family: monospace, serif;
+  color: #ffd07a;
+  font-size: small;
+}
+
+.SkillBox{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.SkillName{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: white;
+    font-size: large;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.progress {
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+  width: 90%;
+}
+
+.progress-value {
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 10px;
+  width: 0;
+}
+
+.react{
+    animation: REACT 3s normal forwards;
+    background: rgb(109, 226, 255);
+}
+@keyframes REACT {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.javaScript{
+    animation: JAVASCRIPT  3s normal forwards;
+    background: rgb(255, 253, 113);
+}
+@keyframes JAVASCRIPT {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+.java{
+    animation: JAVA  3s normal forwards;
+    background: rgb(255, 186, 107);
+}
+@keyframes JAVA {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+.Html{
+    animation: HTML  3s normal forwards;
+    background: rgb(255, 193, 112);
+}
+@keyframes HTML {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+.Css{
+    animation: CSS  3s normal forwards;
+    background: rgb(115, 180, 255);
+}
+@keyframes CSS {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+.Sql{
+    animation: SQL  3s normal forwards;
+    background: rgb(156, 119, 255);
+}
+@keyframes SQL {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 67%;
+  }
+}
+
+.Bootstrap{
+    animation: BOOTSTRAP  3s normal forwards;
+    background: rgb(237, 104, 255);
+}
+@keyframes BOOTSTRAP {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+.Mui{
+    animation: MUI  3s normal forwards;
+    background: rgb(118, 166, 255);
+}
+@keyframes MUI {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
