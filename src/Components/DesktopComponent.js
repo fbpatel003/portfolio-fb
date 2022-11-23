@@ -12,6 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import IntegrationInstructionsTwoToneIcon from "@mui/icons-material/IntegrationInstructionsTwoTone";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import AboutMe from "./AboutMe";
 
 ///////
 function DesktopComponent() {
@@ -347,7 +348,7 @@ function DesktopComponent() {
         </div>
       </section>
       <section ref={AboutMeRef} id="About-me" className="About-me-sec">
-        About me
+        <AboutMe/>
       </section>
       <section ref={SkillsRef} className="Skills-sec">
         Skills

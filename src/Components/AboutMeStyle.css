@@ -1,0 +1,14 @@
+.responsiveBoxSpeciality{
+    margin: auto;
+}
+.specialityBox{
+    border: 2px solid red;
+    height: 100px;
+}
+.TitleAboutMe{
+    font-family: Lobster, serif;
+    font-size: larger;
+    font-size: 10vh;
+    text-decoration: underline;
+    color: aqua;
+}
