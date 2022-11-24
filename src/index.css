@@ -7,7 +7,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(41, 41, 41);
+  /* background-color: rgb(41, 41, 41); */
+  background: linear-gradient(315deg, rgb(53, 53, 53) 0%, rgba(0,8,54,1) 100%);
 }
 
 code {
@@ -55,9 +56,8 @@ code {
 }
 
 .menu-item, .menu-open-button {
-  /* background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
-  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(187, 187, 187) 100%);
-  /* background: radial-gradient(circle,rgb(189, 189, 189) 100%, rgb(255, 255, 255) 0%); */
+  /* background: radial-gradient(circle, rgb(255, 255, 255) 100%, rgb(187, 187, 187) 50%); */
+  background: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(175,175,175,1) 66%);
   border-radius: 100%;
   width: 80px;
   height: 80px;
@@ -269,10 +269,11 @@ code {
   /* border: 2px solid red; */
   padding: 5px;
   position: relative;
-  max-width: 1000px;
+  max-width: 500px;
+  max-height: 500px;
   align-self: center;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .getStartedBtn {
@@ -363,8 +364,8 @@ code {
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
 .TitleAboutMe {
-  font-size: calc(20px + 8vh);
-  line-height: calc(20px + 10vh);
+  font-size: calc(20px + 6vh);
+  line-height: calc(20px + 5vh);
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
     0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
   color: #fff6a9;

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import MobileComponent from "./Components/MobileComponent";
 import DesktopComponent from "./Components/DesktopComponent";
+import PreLoader from "./PreLoader";
 
 const viewportContext = React.createContext({});  
 
@@ -37,9 +38,24 @@ const MyComponent = () => {
 };
 
 export default function App() {
+
+  const [Loading, setLoading] = useState(false);
+
+  React.useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
+
   return (
+    <>
+    {
+      Loading? <PreLoader/> : 
     <ViewportProvider>
       <MyComponent />
     </ViewportProvider>
+    }
+    </>
   );
 }
