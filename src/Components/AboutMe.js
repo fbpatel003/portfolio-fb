@@ -3,7 +3,7 @@ import "./AboutMeStyle.css";
 import Grid from "@mui/material/Unstable_Grid2";
 import Box from "@mui/material/Box";
 import IMG from "../Images/IMG_4143.jpg";
-import GitHubIcon from '@mui/icons-material/GitHub';
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 function AboutMe(props) {
   return (
@@ -28,36 +28,33 @@ function AboutMe(props) {
           </Grid>
         </Grid>
       </Box>
-      <Grid
-        className="wrapper"
-        container
-        direction="row"
-        justifyContent="space-evenly"
-        alignItems="flex-start"
-        rowSpacing={1}
-        columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-      >
-        <Grid className="icon facebook" xs={4}>
-          <span className="tooltip">Facebook</span>
-          <span>
-            <i className="fab fa-facebook-f" />
-          </span>
+
+      <Box className="IconBox" sx={{ width: "98%" }}>
+        <Grid
+          container
+          direction="row"
+          justifyContent="space-around"
+          alignItems="center"
+        >
+          <Grid item xs={12}>
+            <div className="IconList LinkedINList">
+              <a href="https://www.linkedin.com/mwlite/in/fenil-patel-a8545b197" target="_blank" className="IconLink">
+                <span className="Linked Icon"></span>
+              </a>
+            </div>
+            <div className="IconList GitHubList">
+              <a href="https://github.com/fbpatel003?tab=repositories" target="_blank" className="IconLink">
+                <span className="Git Icon"></span>
+              </a>
+            </div>
+            <div className="IconList LeetCodeList">
+              <a href="https://leetcode.com/fb_patel/" target="_blank" className="IconLink">
+                <span className="Leet Icon"></span>
+              </a>
+            </div>
+          </Grid>
         </Grid>
-        <Grid className="icon github" xs={4}>
-          <div href="https://github.com">
-          <span className="tooltip">Github</span>
-          <span>
-            <GitHubIcon sx={{ fontSize: 40 }} />
-          </span>
-          </div>
-        </Grid>
-        <Grid className="icon instagram" xs={4}>
-          <span className="tooltip">Instagram</span>
-          <span>
-            <i className="fab fa-instagram" />
-          </span>
-        </Grid>
-      </Grid>
+      </Box>
     </>
   );
 }
