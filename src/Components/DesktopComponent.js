@@ -139,9 +139,6 @@ function DesktopComponent() {
     <>
       <MenuBar />
       <section ref={HomeRef} className="DevBack">
-        <div>
-          <div className="DevDeskContainer">
-            <div className="developer">
               <div className="worker">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -304,36 +301,9 @@ function DesktopComponent() {
                   </g>
                 </svg>
               </div>
-            </div>
-          </div>
           <div className="title">
-            <h1 className="titleee">The Mind of a Web Developer</h1>
+            The Mind of a Web Developer
           </div>
-          <div className="snowflakes" aria-hidden="true">
-            <div className="snowflake">&lt;p&gt;</div>
-            <div className="snowflake">
-              {"{"}opacity: 0.5;{"}"}
-            </div>
-            <div className="snowflake">
-              {"{"}position: relative;{"}"}
-            </div>
-            <div className="snowflake">&lt;title&gt;</div>
-            <div className="snowflake">&lt;img&gt;</div>
-            <div className="snowflake">
-              {"{"}transform: rotate(30deg);{"}"}
-            </div>
-            <div className="snowflake">&lt;h2&gt;</div>
-            <div className="snowflake">
-              {"{"}background-color: darkred;{"}"}
-            </div>
-            <div className="snowflake">
-              {"{"}display: flex{"}"}
-            </div>
-            <div className="snowflake">&lt;head&gt;</div>
-            <div className="snowflake">&lt;body&gt;</div>
-            <div className="snowflake">&lt;script&gt;</div>
-          </div>
-        </div>
         <div className="BtnStarted">
         <div className="getStartedBtn" onClick={() =>
                     AboutMeRef.current?.scrollIntoView({ behavior: "smooth" })
