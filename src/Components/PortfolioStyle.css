@@ -72,11 +72,12 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: auto;
+  margin-bottom: 280px;
 }
 
 .card__side {
   height: auto;
-  height: 400px;
+  height: 280px;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
   position: absolute;
@@ -97,7 +98,7 @@ body {
 
 .card__side--front-1 {
   background: linear-gradient(-45deg, #f403d1, #64b5f6);
-  background: linear-gradient(-45deg, #F5F7FA,  #B8C6DB);
+  background: linear-gradient(-45deg, #FAD0C4, #F1A7F1);
 
 }
 
@@ -108,7 +109,7 @@ body {
 
 .card__side--back-1 {
   background: linear-gradient(-45deg, #64b5f6, #f403d1);
-  background: linear-gradient(-45deg,  #B8C6DB ,#F5F7FA);
+  background: linear-gradient(-45deg,  #F1A7F1, #FAD0C4);
 }
 
 .card:hover .card__side--front-1 {
@@ -131,18 +132,18 @@ body {
 }
 
 .ProjectTitle{
-    font-size: 3vh;
+    font-size: 20px;
     font-family: 'Brush Script MT', cursive;
     text-shadow: 4px 4px 7px rgba(92, 92, 92, 0.75);
   }
 
 .smallData{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: white;
-  font-size: 1.5vh;
+  color: rgb(0, 21, 141);
+  font-size: 10px;
   text-align: justify;
   margin: auto;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   padding-left: 5%;
   padding-right: 5%
 }
@@ -150,7 +151,7 @@ body {
 .KeyPointslist{
   font-size: small;
   font-family: 'Courier New', Courier, monospace;
-  color: white;
+  color: rgb(0, 21, 141);;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -165,4 +166,12 @@ body {
 .btn{
   vertical-align: middle;
 
+}
+
+.card{
+  color: black;
+}
+
+.ProjectBox{
+  padding: 10px;
 }
