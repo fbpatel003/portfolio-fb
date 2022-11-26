@@ -442,6 +442,10 @@ code {
   /* border: 10px solid red; */
  }
 
+ .Contactme-sec{
+  min-height: 700px;
+ }
+
  .DownloadBtn{
   position: fixed;
   z-index: 999;

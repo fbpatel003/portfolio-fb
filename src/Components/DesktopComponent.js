@@ -15,6 +15,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
+import ContactMe from "./ContactMe";
 
 ///////
 function DesktopComponent() {
@@ -322,7 +323,7 @@ function DesktopComponent() {
         <Portfolio />
       </section>
       <section ref={ContactmeRef} className="Contactme-sec">
-        Contact me
+        <ContactMe />
       </section>
     </>
   );
