@@ -3,15 +3,12 @@
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  /* padding: 1.5rem 4rem; */
   padding: 5px;
   display: inline-block;
-  /* border-radius: 0.5rem; */
   border-radius: 5px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   position: relative;
-  /* font-size: 1.6rem; */
   font-size: medium;
   border: none;
   cursor: pointer;
@@ -76,7 +73,6 @@ body {
 }
 
 .card__side {
-  /* height: auto; */
   height: 260px;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
@@ -164,7 +160,6 @@ body {
 
 .btn{
   vertical-align: middle;
-
 }
 
 .card{

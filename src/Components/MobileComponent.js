@@ -294,7 +294,9 @@ function MobileComponent() {
             </g>
           </svg>
         </div>
-        <div className="title">The Mind of a Web Developer</div>
+        <div className="title">There are three responses to a piece of design - yes, no, and WOW!
+        <br/>wow is the one i'm aiming for...
+        </div>
         <div className="BtnStartedMobile">
           <div
             className="getStartedBtn"

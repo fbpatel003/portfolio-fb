@@ -2,8 +2,7 @@ import React from "react";
 import "./AboutMeStyle.css";
 import Grid from "@mui/material/Unstable_Grid2";
 import Box from "@mui/material/Box";
-import IMG from "../Images/IMG_4143.jpg";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import IMG from "../Images/IMG_414323.jpg";
 
 function AboutMe(props) {
   return (
