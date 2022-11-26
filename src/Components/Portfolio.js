@@ -20,21 +20,21 @@ function Portfolio() {
       ImgSrc: IMG1, 
       smallData: "simple restaurant website created in React with Login ID password fetched from API, with functionality of bookmark, add to favorites, and autocomplete search bar.",
       KeyPoints : ["React JS", "Responsive", "API fetched id/ps", "React Routing", "AutoComplete Searchbar", "Google data embeded studio", "CSS: BootStrap"],
-      VisitLink : "https://portfolio-fb.onrender.com/"
+      VisitLink : "https://restaurant-fb.onrender.com"
     },
     {
       Title: "Online VideoPlayer",
       ImgSrc: IMG1, 
       smallData: "online youtube look a like video player with sidebar of the playlist, video player is embeded iframe of youtube and playlist and thumbnail is fetcehd from API",
       KeyPoints : [ "React JS","Responsive", "API fetched playlist", "Youtube embeded Iframe" , "Dark Themne", "CSS: manual"],
-      VisitLink : "https://portfolio-fb.onrender.com/"
+      VisitLink : "https://github.com/fbpatel003/video-player"
     },
     {
       Title: "ToDo List",
       ImgSrc: IMG1, 
       smallData: "A toDo list app created in react, with adding a new list, editing and showing all todos funtionality and 4 input data fields which includes date input too.",
       KeyPoints : ["React JS", "Responsive", "local Storgae", "editing any list" , "4 input fields", "CSS: BootStrap"],
-      VisitLink : "https://portfolio-fb.onrender.com/"
+      VisitLink : "https://todolist-fb.onrender.com"
     },
   ]
 
