@@ -1,11 +1,5 @@
 import React from "react";
 import { useRef } from "react";
-
-import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
-import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
-import TipsAndUpdatesRoundedIcon from "@mui/icons-material/TipsAndUpdatesRounded";
-import BusinessCenterRoundedIcon from "@mui/icons-material/BusinessCenterRounded";
-import ContactsRoundedIcon from "@mui/icons-material/ContactsRounded";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
