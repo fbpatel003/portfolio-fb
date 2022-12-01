@@ -54,12 +54,12 @@ export default function App() {
   }, []);
 
   const DownloadClicked = () => {
-    fetch("Fenil's Resume 1005.pdf").then((response) => {
+    fetch("Fenil's Resume 121.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "Fenil's Resume 1005.pdf";
+        alink.download = "Fenil's Resume 121.pdf";
         alink.click();
       });
     });
